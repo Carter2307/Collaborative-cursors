@@ -15,6 +15,12 @@ const io = new Server(server, {
 });
 
 
+app.get('/test', (req, res) => {
+  res.status(200).json({
+    status: 200,
+    message: "Connected to Socket server"
+  })
+})
 
 const cursors = new Map();
 
